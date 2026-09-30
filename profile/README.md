@@ -2,7 +2,7 @@
 
 Zoldenburg builds payment infrastructure for moving stablecoin value into real-world rails.
 
-Our current focus is **Zold**: a passkey-first remittance app that lets users hold funds in their own Safe account, fund with EURe, and send through KYC-backed payout rails such as Monerium SEPA and MoneyGram cash pickup.
+Our current focus is **Zold**: a remittance app that lets users hold funds in their own Safe account, fund with EURe, and send through KYC-backed payout rails such as Monerium SEPA and MoneyGram cash.
 
 ## What We Are Building
 
