@@ -6,7 +6,7 @@
   <a href="https://zoldhq.com"><b>zoldhq.com</b></a> &nbsp;·&nbsp;
   <a href="https://shareme.lol"><b>shareme.lol</b></a> &nbsp;·&nbsp;
   <a href="https://zoldenburg.com"><b>zoldenburg.com</b></a> &nbsp;·&nbsp;
-  <a href="mailto:kontakt@zoldenburg.de"><b>kontakt@zoldenburg.de</b></a>
+  <a href="mailto:kontakt@zoldenburg.com"><b>kontakt@zoldenburg.com</b></a>
 </p>
 
 <br>
@@ -124,7 +124,7 @@ Focused contributions that make these systems safer and clearer are welcome.
 
 ## Security
 
-Please report suspected vulnerabilities privately to **kontakt@zoldenburg.de**, not in a public issue.
+Please report suspected vulnerabilities privately to **kontakt@zoldenburg.com**, not in a public issue.
 
 We especially want to hear about:
 
@@ -140,5 +140,5 @@ Include the affected repository and commit, steps to reproduce, and whether fund
 <br>
 
 <p align="center">
-  <a href="https://zoldenburg.com"><img src="assets/footer.svg" width="100%" alt="Zoldenburg · München · zoldenburg.com · kontakt@zoldenburg.de"></a>
+  <a href="https://zoldenburg.com"><img src="assets/footer.svg" width="100%" alt="Zoldenburg · München · zoldenburg.com · kontakt@zoldenburg.com"></a>
 </p>
