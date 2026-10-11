@@ -13,7 +13,7 @@
 
 Zoldenburg builds the rails that move euro and dollar stablecoins between bank accounts, merchants and AI agents. Every balance sits in a Safe smart account whose owner is a passkey on the user's own device. The servers prepare payments, relay them and keep the books. None of them holds a key that can move the money.
 
-Zoldenburg UG is based in München. The org has 15 repositories in four fields: fintech, crypto, AI agents and DAO governance. Four products share one architecture.
+Zoldenburg UG is based in München. The org has repositories in four fields: fintech, crypto, AI agents and DAO governance. Four products share one architecture.
 
 <br>
 
