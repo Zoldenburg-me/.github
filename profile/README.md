@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://zoldenburg.com"><img src="assets/hero.svg" width="100%" alt="Zoldenburg: payment infrastructure on stablecoin rails. Money for people, businesses and the agents they run."></a>
+  <a href="https://zoldenburg.com"><img src="assets/hero.svg" width="100%" alt="Zoldenburg. Nothing moves without your yes. Money for people, companies and the agents they run."></a>
 </p>
 
 <p align="center">
@@ -11,9 +11,17 @@
 
 <br>
 
-Zoldenburg builds the rails that move euro and dollar stablecoins between bank accounts, merchants and AI agents. Every balance sits in a Safe smart account whose owner is a passkey on the user's own device. The servers prepare payments, relay them and keep the books. None of them holds a key that can move the money.
+**Nothing moves without your yes.** Zoldenburg builds money that moves only on approval. A person approves each of their own transfers, and nobody else can: not a scammer, not an app employee, not us. In a company, no one person can say yes alone. An agent pays only within the limits its owner set.
+
+That is the story. The technology is the receipt: passkeys, Safe smart accounts, Monerium's euro e-money on Base, and x402 for agents. Our servers prepare payments, relay them and keep the books. None of them holds a key that can move the money.
 
 Zoldenburg UG is based in München. The org has repositories in four fields: fintech, crypto, AI agents and DAO governance. Four products share one architecture.
+
+<br>
+
+<p align="center">
+  <img src="assets/pillars.svg" width="100%" alt="One idea, four proofs. For a person: only you can send it; every transfer waits for your face or fingerprint, for that exact amount and recipient. For a company: no one person can empty the account; one prepares, another approves, the accountant gets the books. For an agent: only within your limits; caps per call and per day, an allowlist of hosts, payments bound to the exact URL. For everyone: no rate, no asterisk; euros backed one-for-one and kept in your name, fees shown before you approve.">
+</p>
 
 <br>
 
@@ -25,7 +33,7 @@ Zoldenburg UG is based in München. The org has repositories in four fields: fin
 
 | | Product | What it owns | What it leaves to the others |
 |:-:|---|---|---|
-| **01** | **[Zold app](https://github.com/Zoldenburg-me/Zold-app)**<br><sub>Personal and business banking</sub> | Users, passkeys, each user's passkey-owned Safe, the Monerium euro IBAN, the books and auto-convert | Merchant checkout, agent-payment settlement |
+| **01** | **[Zold app](https://github.com/Zoldenburg-me/Zold-app)**<br><sub>The euro account you own</sub> | Users, passkeys, each user's passkey-owned Safe, the Monerium euro IBAN, the books and auto-convert | Merchant checkout, agent-payment settlement |
 | **02** | **[Zold Pay](https://github.com/Zoldenburg-me/zold-pay)**<br><sub>Checkout</sub> | Merchants get paid, in stablecoins too, into their bank account without touching crypto | Safes and keys: it asks the Zold app |
 | **03** | **Agentpay hub**<br><sub>Agent payments · private</sub> | x402 v2 and MPP protocol code, the buyer router and its MCP server, `@zold/accept` seller middleware, hosted settlement | Merchant onboarding, the books, off-ramping |
 | **04** | **[shareme.lol](https://github.com/Zoldenburg-me/shareme.lol)**<br><sub>Agent tools</sub> | An MCP server on the agent's machine and an HTTP host that turns files into expiring links: free for 7 days, paid options beyond | Payment logic: it charges through the hub |
@@ -35,7 +43,7 @@ Zoldenburg UG is based in München. The org has repositories in four fields: fin
 <br>
 
 <p align="center">
-  <img src="assets/statement.svg" width="100%" alt="A bank account asks you to trust the bank. A Zold account answers only to your passkey. Funds never pass through Zold, Zold Pay or the hub.">
+  <img src="assets/statement.svg" width="100%" alt="Most money apps lead with a rate. We lead with who can say yes. No rate, no asterisk: we don't lend your euros out, so there is none to quietly cut.">
 </p>
 
 <br>
@@ -57,7 +65,7 @@ Zoldenburg UG is based in München. The org has repositories in four fields: fin
 
 | Repository | What it is | Stack |
 |---|---|---|
-| [**Zold-app**](https://github.com/Zoldenburg-me/Zold-app) | The self-custodial euro account: euro IBAN through Monerium, EURe in a passkey-owned Safe on Base, SEPA payouts, USDC ⇄ EURe, payment links, invoicing, bookkeeping and business organisations with four-eyes drafts | TypeScript · Express · Solidity |
+| [**Zold-app**](https://github.com/Zoldenburg-me/Zold-app) | **The euro account you own.** Each transfer is approved with your face or fingerprint, for that exact amount and recipient. For companies, one person prepares and another approves, and the accountant gets the books, not the keys. Under the hood: a euro IBAN through Monerium, EURe in a passkey-owned Safe on Base, SEPA payouts, USDC ⇄ EURe, payment links and invoicing | TypeScript · Express · Solidity |
 | [**zold-pay**](https://github.com/Zoldenburg-me/zold-pay) | Pay with Zold: the hosted checkout and the merchant OAuth / PKCE handoff. It owns merchants and payment intents; users, keys and balances stay in the Zold app | TypeScript |
 | [**zold**](https://github.com/Zoldenburg-me/zold) | The cross-border reference implementation: SEPA in, EURe in the user's Safe, out as SEPA or MoneyGram cash pickup via CCTP and Stellar | TypeScript · Hardhat |
 | [**sevdesk-monerium**](https://github.com/Zoldenburg-me/sevdesk-monerium) | Mirrors a Monerium account's settled orders and on-chain EURe transfers into sevDesk as bank transactions. Read-only on Monerium and the chain; it never books anything itself | TypeScript |
@@ -92,7 +100,7 @@ Zoldenburg UG is based in München. The org has repositories in four fields: fin
 
 ## What is live, and what is not
 
-We label what has not run on real money. Payment software earns trust slowly.
+We label what has not run on real money. A line goes live only when the product does what it says.
 
 | | Runs today | Not yet |
 |---|---|---|
@@ -101,16 +109,27 @@ We label what has not run on real money. Payment software earns trust slowly.
 | **Agentpay hub** | x402 v2 buyer: one $0.01 test-USDC payment settled on Base Sepolia. Seller settlement is tested against scripted chains | Never run on mainnet. The MPP signer is a mock |
 | **shareme.lol** | File host and MCP server, with paid retention over x402 v2 | The MCP payment flow is moving to the x402 MCP transport |
 
+### Who else can touch a Zold account
+
+The promise covers transfers. Two other parties have a role, and we name them.
+
+- **Recovery, if you turn it on.** Zoldenburg can move your account to a new phone after checking that it's you. It can never send money, and your old phone can cancel during the waiting period.
+- **Monerium,** which issues your euros, can freeze them where the law requires.
+- **The card** is a Gnosis Pay card with its own account. Card taps don't ask for your face or fingerprint, so the "only you" promise doesn't extend to it.
+
+**Yours, even without us, on one condition.** Add a backup key you keep yourself, such as a hardware wallet, and you can reach your money with free, open tools even if Zold is gone. Without one, your face or fingerprint login works only on zoldhq.com, so the backup key is what lets the account outlive us.
+
 <br>
 
 ## Principles
 
-- **No custody by default.** Users should never need to trust us with private keys. A server may prepare a debit, but it never holds a key that can make or block one.
+- **Nothing moves without your yes.** A server may prepare a transfer, but it never holds a key that can approve or block one. That includes ours.
 - **Every payment leg is visible.** Operators can see what moved, where it went and why it failed, without guessing.
 - **Failures are explicit states.** A payment that fails becomes a named state with a reason, never a silent gap.
 - **Fail closed.** When live credentials or compliance requirements are missing, real-world rails refuse to run. They never fall back to something weaker.
 - **Spend limits for agents.** Agents pay from small, dedicated wallets with per-call and per-day caps. Payments are bound to the exact URL and amount.
-- **No quiet shortcuts.** Public demos never rely on production secrets or fake-money switches.
+- **No rate, no asterisk.** We don't lend customer euros out, so there is no yield to advertise and none to quietly cut. Fees are shown before you approve.
+- **Copy follows the product.** A claim goes on a page only when the product already does it. Public demos never rely on production secrets or fake-money switches.
 
 ## Contributing
 
