@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="https://zoldenburg.de"><img src="assets/hero.svg" width="100%" alt="Zoldenburg: payment infrastructure on stablecoin rails. Money for people, businesses and the agents they run."></a>
+  <a href="https://zoldenburg.com"><img src="assets/hero.svg" width="100%" alt="Zoldenburg: payment infrastructure on stablecoin rails. Money for people, businesses and the agents they run."></a>
 </p>
 
 <p align="center">
   <a href="https://zoldhq.com"><b>zoldhq.com</b></a> &nbsp;·&nbsp;
   <a href="https://shareme.lol"><b>shareme.lol</b></a> &nbsp;·&nbsp;
-  <a href="https://zoldenburg.de"><b>zoldenburg.de</b></a> &nbsp;·&nbsp;
+  <a href="https://zoldenburg.com"><b>zoldenburg.com</b></a> &nbsp;·&nbsp;
   <a href="mailto:kontakt@zoldenburg.de"><b>kontakt@zoldenburg.de</b></a>
 </p>
 
@@ -140,5 +140,5 @@ Include the affected repository and commit, steps to reproduce, and whether fund
 <br>
 
 <p align="center">
-  <a href="https://zoldenburg.de"><img src="assets/footer.svg" width="100%" alt="Zoldenburg · München · zoldenburg.de · kontakt@zoldenburg.de"></a>
+  <a href="https://zoldenburg.com"><img src="assets/footer.svg" width="100%" alt="Zoldenburg · München · zoldenburg.com · kontakt@zoldenburg.de"></a>
 </p>
